@@ -20,12 +20,12 @@ class ProfileController extends Controller {
 
         $name = 'access_token';
         $value = '123-XYZ';
-        $minutes = 60;
+        $minute = 1;
         $path = '/';
         $domain = $_SERVER['SERVER_NAME'];
         $secure = false;
         $httpOnly = true;
-        return response( 'Cookie Set' )->cookie( $name, $value, $minutes, $path, $domain, $secure, $httpOnly );
+        return response( 'Cookie Set' )->cookie( $name, $value, $minute, $path, $domain, $secure, $httpOnly );
 
     }
 }
