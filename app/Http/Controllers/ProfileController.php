@@ -17,6 +17,7 @@ class ProfileController extends Controller {
             'age'  => $age
         ];
 
+        return response()->json( $data );
 
         $name = 'access_token';
         $value = '123-XYZ';
